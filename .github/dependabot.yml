@@ -1,0 +1,24 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    target:
+      dependency-type: "all"
+    commit-message:
+      prefix: "chore(deps): update npm dependencies"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "SelimWaly"
+    assignees:
+      - "Ahmed-M-Taha"
+    directory:
+      - "/"
+    schedule:
+      interval: "daily"
+    on:
+      - "main"
+
